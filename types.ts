@@ -4,7 +4,7 @@ export interface CosmicObject {
   slug: string;
   title: string;
   content?: string;
-  metadata: Record<string, any>;
+  metadata?: Record<string, any>; // Changed: Made optional to allow child interfaces to override with null or specific types
   type: string;
   created_at: string;
   modified_at: string;
